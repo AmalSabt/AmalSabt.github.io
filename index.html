@@ -213,6 +213,20 @@
       font-size: 13px;
       font-weight: 700;
     }
+    .project-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 3px;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
 
     .small-projects {
       display: grid;
@@ -379,24 +393,29 @@
 
         <div class="project-grid">
 
-          <div class="project-card">
-            <div>
-              <div class="project-number">01 / Capstone</div>
-              <h3>Chemicals in Cosmetics</h3>
-              <p>
-                Analyzed cosmetic chemical reporting data to identify chemical groups,
-                product categories, and product variants that may require closer safety review.
-                The project combined data cleaning, trend analysis, category-level insights,
-                and recommendations focused on product safety prioritization.
-              </p>
-            </div>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Tableau</span>
-              <span class="tag">Excel</span>
-              <span class="tag">Research</span>
-            </div>
-          </div>
+<div class="project-card">
+  <div>
+    <div class="project-number">01 / Capstone</div>
+    <h3>Chemicals in Cosmetics</h3>
+    <p>
+      Analyzed cosmetic chemical reporting data to identify chemical groups,
+      product categories, and product variants that may require closer safety review.
+      The project combined data cleaning, trend analysis, category-level insights,
+      and recommendations focused on product safety prioritization.
+    </p>
+  </div>
+
+  <div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Tableau</span>
+      <span class="tag">Excel</span>
+      <span class="tag">Research</span>
+    </div>
+
+    <a class="project-link" href="projects/cosmetics.html">View Case Study →</a>
+  </div>
+</div>
 
           <div class="project-card">
             <div>
