@@ -155,6 +155,27 @@
       color: var(--muted);
       background: #fbfaf7;
     }
+    .project-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.project-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.image-caption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
 
     .recommendation {
       background: var(--text);
@@ -314,17 +335,25 @@
         </div>
       </section>
 
-      <section>
-        <h2 class="section-title">Visualizations</h2>
-        <div class="grid">
-          <div class="placeholder">
-            Add dashboard screenshot here
-          </div>
-          <div class="placeholder">
-            Add heatmap / chart screenshot here
-          </div>
-        </div>
-      </section>
+<section>
+  <h2 class="section-title">Visualizations</h2>
+
+  <div class="grid">
+    <div>
+      <a href="../assets/dashboard.png" target="_blank">
+        <img class="project-image" src="../assets/dashboard.png" alt="Cosmetics dashboard screenshot">
+      </a>
+      <p class="image-caption">Dashboard overview showing chemical reporting patterns and key findings.</p>
+    </div>
+
+    <div>
+      <a href="../assets/heatmap.png" target="_blank">
+        <img class="project-image" src="../assets/heatmap.png" alt="Chemical concern heatmap">
+      </a>
+      <p class="image-caption">Heatmap showing selected chemical concern groups across product categories.</p>
+    </div>
+  </div>
+</section>
 
       <section>
         <h2 class="section-title">Recommendations</h2>
