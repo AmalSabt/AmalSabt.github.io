@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chemicals in Cosmetics | Amal Sabt</title>
+
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666666;
+      --accent: #8e5e72;
+      --accent-light: #efe6ea;
+      --border: #e5e0dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1050px, 90%);
+      margin: 0 auto;
+    }
+
+    nav {
+      padding: 26px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .back:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 70px 0 45px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+      margin: 0 0 22px;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 780px;
+      font-size: 20px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .tag {
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 35px 0;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin: 0 0 18px;
+      letter-spacing: -0.8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .placeholder {
+      border: 1px dashed var(--border);
+      border-radius: 20px;
+      padding: 35px;
+      text-align: center;
+      color: var(--muted);
+      background: #fbfaf7;
+    }
+
+    .recommendation {
+      background: var(--text);
+      color: white;
+    }
+
+    .recommendation p,
+    .recommendation li {
+      color: #dedede;
+    }
+
+    footer {
+      padding: 35px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 50px 0 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav>
+      <a class="back" href="../index.html">← Back to portfolio</a>
+      <span class="back">Amal Sabt</span>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="eyebrow">Capstone Project</div>
+        <h1>Chemicals in Cosmetics</h1>
+        <p>
+          A data analysis project using cosmetic chemical reporting data to identify
+          chemical groups, product categories, and product variants that may require
+          closer safety review.
+        </p>
+
+        <div class="meta">
+          <span class="tag">Python</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Research</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Data Visualization</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Overview</h2>
+        <div class="card">
+          <p>
+            This project analyzed cosmetic products reported to the California Safe Cosmetics
+            Program. The goal was not to label products as unsafe, but to use historical
+            reporting data as a prioritization tool for product safety review.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Business Problem</h2>
+        <div class="card">
+          <p>
+            Cosmetic companies need a data-driven way to identify which products, categories,
+            and ingredients should be reviewed first. Chemical concern depends on more than
+            reporting frequency; it also depends on product form, exposure route, dosage,
+            contamination risk, and regulatory context.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Data Cleaning & Preparation</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Cleaning Steps</h3>
+            <ul>
+              <li>Converted date columns into proper datetime format.</li>
+              <li>Standardized product, brand, category, and chemical names.</li>
+              <li>Handled missing brand names using company names where needed.</li>
+              <li>Removed duplicates and unnecessary ID fields.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Feature Engineering</h3>
+            <ul>
+              <li>Created chemical review groups by concern type.</li>
+              <li>Created product-level keys to reduce double counting.</li>
+              <li>Grouped products by chemical burden: 1, 2–3, and 4+ chemicals.</li>
+              <li>Classified products as active or discontinued.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Analysis Summary</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Chemical-Level Analysis</h3>
+            <p>
+              Reviewed top reported chemicals and grouped them by concern type:
+              inhalation exposure, contamination, dosage, byproduct exposure, and toxic metal contamination.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Product-Level Analysis</h3>
+            <p>
+              Analyzed product variants with multiple selected concern chemicals and checked
+              whether high-complexity products were active or discontinued.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Category-Level Analysis</h3>
+            <p>
+              Compared product categories to identify where multiple selected concern chemicals
+              were more common, especially in pigment-heavy or long-wear products.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Market & Regulation Context</h3>
+            <p>
+              Connected historical reporting trends to cosmetic safety regulation, consumer
+              transparency, and product reformulation considerations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Key Findings</h2>
+        <div class="card">
+          <ul>
+            <li>Titanium dioxide made up the largest share of reported chemical entries.</li>
+            <li>Frequency alone does not define risk; product form and exposure route matter.</li>
+            <li>Talc concern is mainly linked to possible asbestos contamination.</li>
+            <li>Retinoid concern is dosage-based, especially for pregnancy-related exposure.</li>
+            <li>Formaldehyde-related chemicals are important in heat-treated hair products.</li>
+            <li>Products with 4+ selected concern chemicals were mostly marked active.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Visualizations</h2>
+        <div class="grid">
+          <div class="placeholder">
+            Add dashboard screenshot here
+          </div>
+          <div class="placeholder">
+            Add heatmap / chart screenshot here
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Recommendations</h2>
+        <div class="card recommendation">
+          <ul>
+            <li>Prioritize products with 4+ selected concern chemicals for closer review.</li>
+            <li>Review chemicals by concern type, not only by reporting frequency.</li>
+            <li>Use category-specific review for makeup, skincare, hair care, and pigment-heavy products.</li>
+            <li>Strengthen supplier documentation for talc, pigments, minerals, and possible contaminants.</li>
+            <li>Improve consumer communication through clearer ingredient and exposure guidance.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Limitations</h2>
+        <div class="card">
+          <ul>
+            <li>The dataset ends in 2020 and may not reflect current formulas.</li>
+            <li>The data shows reported chemical presence, not concentration or actual exposure.</li>
+            <li>Product status may be outdated.</li>
+            <li>Current product labels and safety documents are needed for final verification.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Amal Sabt. Built with GitHub Pages.
+  </footer>
+
+</body>
+</html>
